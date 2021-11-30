@@ -110,3 +110,17 @@ bottomContentH4Three.textContent = siteContent['main-content']['vision-h4'];
 
 const bottomContentPThree = document.querySelector('.bottom-content .text-content:nth-child(3) p');
 bottomContentPThree.textContent = siteContent['main-content']['vision-content'];
+
+const contactH4 = document.querySelector('.contact h4');
+contactH4.textContent = siteContent['contact']['contact-h4'];
+
+const contactP1 = document.querySelector('.contact p:nth-child(2)');
+contactP1.textContent = siteContent['contact']['address'];
+
+const contactP2 = document.querySelector('.contact p:nth-child(3)');
+contactP2.textContent = siteContent['contact']['phone'];
+
+const contactP3 = document.querySelector('.contact p:nth-child(4)');
+contactP3.textContent = siteContent['contact']['email'];
+
+footerLink.textContent = siteContent['footer']['copyright'];
