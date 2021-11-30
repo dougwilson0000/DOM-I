@@ -84,8 +84,29 @@ mainContentH4.textContent = siteContent['main-content']['features-h4'];
 const mainContentP = document.querySelector('.top-content .text-content p');
 mainContentP.textContent = siteContent['main-content']['features-content'];
 
-const mainContentAbout = document.querySelector('.top-content .text-content h4:nth-child(2)');
-mainContentAbout.textContent = siteContent['main-content']['about-h4'];
+const mainContentAboutH4 = document.querySelector('.top-content .text-content:nth-child(2) h4');
+mainContentAboutH4.textContent = siteContent['main-content']['about-h4'];
 
-const mainContentAboutContent = document.querySelector('.top-content .text-content p:nth-child(2)');
+const mainContentAboutContent = document.querySelector('.top-content .text-content:nth-child(2) p');
 mainContentAboutContent.textContent = siteContent['main-content']['about-content'];
+
+const mainContentImg = document.querySelector('#middle-img');
+mainContentImg.src = './mocks/img/accent.png';
+
+const bottomContentH4One = document.querySelector('.bottom-content .text-content:nth-child(1) h4');
+bottomContentH4One.textContent = siteContent['main-content']['services-h4'];
+
+const bottomContentPOne = document.querySelector('.bottom-content .text-content:nth-child(1) p');
+bottomContentPOne.textContent = siteContent['main-content']['services-content'];
+
+const bottomContentH4Two = document.querySelector('.bottom-content .text-content:nth-child(2) h4');
+bottomContentH4Two.textContent = siteContent['main-content']['product-h4'];
+
+const bottomContentPTwo = document.querySelector('.bottom-content .text-content:nth-child(2) p');
+bottomContentPTwo.textContent = siteContent['main-content']['product-content'];
+
+const bottomContentH4Three = document.querySelector('.bottom-content .text-content:nth-child(3) h4');
+bottomContentH4Three.textContent = siteContent['main-content']['vision-h4'];
+
+const bottomContentPThree = document.querySelector('.bottom-content .text-content:nth-child(3) p');
+bottomContentPThree.textContent = siteContent['main-content']['vision-content'];
