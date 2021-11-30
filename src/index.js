@@ -40,3 +40,52 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+const links = document.querySelectorAll('nav a');
+links.forEach(function(link) {
+  link.classList.add('italic');
+})
+const footerLink = document.querySelector('footer a');
+footerLink.classList.add('bold');
+
+const nav1 = document.querySelector('nav a:nth-child(1)');
+nav1.textContent = siteContent['nav']['nav-item-1'];
+
+const nav2 = document.querySelector('nav a:nth-child(2)');
+nav2.textContent = siteContent['nav']['nav-item-2'];
+
+const nav3 = document.querySelector('nav a:nth-child(3)');
+nav3.textContent = siteContent['nav']['nav-item-3'];
+
+const nav4 = document.querySelector('nav a:nth-child(4)');
+nav4.textContent = siteContent['nav']['nav-item-4'];
+
+const nav5 = document.querySelector('nav a:nth-child(5)');
+nav5.textContent = siteContent['nav']['nav-item-5'];
+
+const nav6 = document.querySelector('nav a:nth-child(6)');
+nav6.textContent = siteContent['nav']['nav-item-6'];
+
+const logoImg = document.querySelector('#logo-img');
+logoImg.src = './mocks/img/logo.png';
+
+const ctaText = document.querySelector('.cta-text h1');
+ctaText.textContent = siteContent['cta']['h1'];
+
+const ctaButton = document.querySelector('.cta-text button');
+ctaButton.textContent = siteContent['cta']['button'];
+
+const ctaImage = document.querySelector('.cta img');
+ctaImage.src = './mocks/img/cta.png';
+
+const mainContentH4 = document.querySelector('.top-content .text-content h4');
+mainContentH4.textContent = siteContent['main-content']['features-h4'];
+
+const mainContentP = document.querySelector('.top-content .text-content p');
+mainContentP.textContent = siteContent['main-content']['features-content'];
+
+const mainContentAbout = document.querySelector('.top-content .text-content h4:nth-child(2)');
+mainContentAbout.textContent = siteContent['main-content']['about-h4'];
+
+const mainContentAboutContent = document.querySelector('.top-content .text-content p:nth-child(2)');
+mainContentAboutContent.textContent = siteContent['main-content']['about-content'];
